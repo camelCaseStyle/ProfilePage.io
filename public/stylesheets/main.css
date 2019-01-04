@@ -2,7 +2,7 @@
     margin-top: 5vw;
 }
 #sidebar{
-    border-right: solid crimson;
+
     text-align: center;
 } 
 #rotate{
@@ -15,4 +15,7 @@
 a:hover{
     text-emphasis: none;
     text-decoration: none;
+}
+#sidebar img{
+    border-radius: 20px;
 }
