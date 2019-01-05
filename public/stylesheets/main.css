@@ -19,3 +19,72 @@ a:hover{
 #sidebar img{
     border-radius: 20px;
 }
+@media (min-width: 400px) and (max-width: 767.98px){
+    .jumbotron{
+        margin-top: 25px;
+    }
+}
+#secondRow{
+    overflow: scroll;
+    white-space: nowrap;
+}
+.thumbnail img{
+    width: 15vw;
+    height: 15vw;
+    padding: 0;
+
+}
+
+.thumbnail{
+    margin: 2vw;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.highlightReel {
+    
+    margin-left: 252px;
+    
+}
+
+.innerContainer::before{
+    content: '';
+    box-shadow: inset 15px 0 15px -15px rgba(0,0,0,.7);
+    position: absolute;
+    height: 18pc;
+    width: 30px;
+}
+.innerContainer{
+    max-width: 1052px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.innerContainer::after{
+    content: "";
+    box-shadow: inset -15px 0 15px -15px rgba(0,0,0,.7);
+    height: 18pc;
+    width: 30px;
+    position: absolute;
+    left: 1274px;
+    top: 523px;
+    right: 0;
+}
+
+.thumbnail .caption{
+    text-align:center;
+}
+@media (min-width: 400px) and (max-width: 767.98px){
+    .highlightReel {
+        margin-left: 0px;
+        
+    }
+    .innerContainer{
+        max-width: 1052px;
+    }
+    .innerContainer::after{
+        top: 877px;
+        left: 710px;
+    }
+}
