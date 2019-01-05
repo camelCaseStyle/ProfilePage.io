@@ -4,7 +4,7 @@ var express = require("express"),
 
 
 var indexRoutes = require("./routes/index");
-var DATABASEURL = process.env.DATABASEURL;
+var DATABASEURL = process.env.DATABASE_URL;
 app.set("view engine", "ejs");
 app.use(express.static(__dirname+"/public"));
 mongoose.connect(DATABASEURL, { useNewUrlParser: true });
