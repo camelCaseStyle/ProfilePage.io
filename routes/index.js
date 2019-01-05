@@ -1,6 +1,6 @@
 var express = require("express"),
     router = express.Router({mergeParams:true}),
-    Story = require("../models/story.js");
+    Story = require("../models/story");
 
 router.get("/", function(req, res){
     Story.find({}, function(error, stories){
