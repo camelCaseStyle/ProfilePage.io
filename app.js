@@ -1,7 +1,6 @@
 var express = require("express"),
     app = express()
-    mongoose = require("mongoose"),
-    ejsLint = require("ejs-lint");
+    mongoose = require("mongoose");
 
 
 var indexRoutes = require("./routes/index");
