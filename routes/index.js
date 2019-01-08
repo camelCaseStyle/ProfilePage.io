@@ -9,7 +9,7 @@ router.get("/", function(req, res){
         }else{
             res.render("home/index",{stories: stories});
         }
-    });   
+    });    
 });
 
 module.exports = router;

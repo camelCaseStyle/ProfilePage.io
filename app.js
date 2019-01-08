@@ -4,12 +4,12 @@ var express = require("express"),
 
 
 var indexRoutes = require("./routes/index");
-var DATABASEURL = process.env.DATABASE_URL;
+var DATABASEURL = "mongodb://anubhav.ashish:jamBread22@ds149744.mlab.com:49744/profilepage";
 app.set("view engine", "ejs");
 app.use(express.static(__dirname+"/public"));
 mongoose.connect(DATABASEURL, { useNewUrlParser: true });
-var PORT = process.env.PORT ,
-    IP = process.env.IP;
+var PORT = process.env.PORT || 3000,
+    IP = process.env.IP || "127.0.0.1";
 
 
 app.listen(PORT, IP, function(){

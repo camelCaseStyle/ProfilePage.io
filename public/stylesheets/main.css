@@ -41,19 +41,6 @@ a:hover{
     display: inline-block;
 }
 
-.highlightReel {
-    
-    margin-left: 252px;
-    
-}
-
-.innerContainer::before{
-    content: '';
-    box-shadow: inset 15px 0 15px -15px rgba(0,0,0,.7);
-    position: absolute;
-    height: 18pc;
-    width: 30px;
-}
 .innerContainer{
     max-width: 1052px;
     overflow-x: scroll;
@@ -61,30 +48,40 @@ a:hover{
     white-space: nowrap;
 }
 
-.innerContainer::after{
-    content: "";
-    box-shadow: inset -15px 0 15px -15px rgba(0,0,0,.7);
-    height: 18pc;
-    width: 30px;
-    position: absolute;
-    left: 1274px;
-    top: 523px;
-    right: 0;
+
+.innerContainer{
+    -webkit-box-shadow: inset -15px 0 15px -15px rgba(0,0,0,.7);
+    box-shadow: inset -15px 0 15px -15px rgba(0,0,0,.7), inset 15px 0 15px -15px rgba(0,0,0,.7);
 }
 
 .thumbnail .caption{
     text-align:center;
+    font-size: 1.1vw;
+}
+
+
+.thumbnail:hover{
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
 }
 @media (min-width: 400px) and (max-width: 767.98px){
+    
     .highlightReel {
-        margin-left: 0px;
-        
+        margin-left: 0px;   
     }
+
     .innerContainer{
-        max-width: 1052px;
+        max-width: 100%;
     }
+
     .innerContainer::after{
         top: 877px;
         left: 710px;
     }
+}
+@media (min-width: 768px) and (max-width: 850px)
+{   .col-md-9{
+    padding-left: 46px;
+    }
+
 }
