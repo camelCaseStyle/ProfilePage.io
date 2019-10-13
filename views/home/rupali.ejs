@@ -1,0 +1,39 @@
+<% include ../partials/header %>
+<div id='sidebar-rup'>
+
+</div>
+<div id='image-header'>
+</div>
+<div class="box" id ='custom-color'>    
+    <div id='inner-box'>
+    <h1>Hi Rupali!</h1>
+    
+    <p>You bubbly piece of a human being. Whenever you are feeling anything other than happy and sparkling, I want you to visit this page and remember you are a strong independent black woman. (Just kissing, sorry I meant just kidding).</p>
+
+    <p>The sole purpose of this is to make you smile and well dare I say <i>cringe</i>! So we are going to go ahead and do just that. 
+    Below you will find some specially curated dad jokes and one liners designed for the one and only you.</p>
+    <h2>Please don't hate me</h2>
+    <% for(var j = 0; j < 5; j++){ %>
+        <div class='joke'><%=j+1%>. <%=jokes[j].joke%></div>
+    <% } %>
+    
+    </div>
+</div>
+<div class='thumbnail'>
+<img src="https://qph.fs.quoracdn.net/main-qimg-f0a6d293c236a387e3eb2aeee5dadb54.webp"/>
+<img src="https://media.giphy.com/media/cNzA9LUpatvAg1Nlr4/giphy.gif"/>
+<img src="https://media.giphy.com/media/26uTszfXVHdfR61B6/giphy.gif"/>
+<img src="https://i.pinimg.com/originals/1d/06/74/1d0674eed8ca66e93e895210003aecd1.jpg"/>
+<img src="https://i.imgur.com/UNXbL5i.jpg"/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpIoYkY5vtw4aLN9p9-vPv8KFMlSCCW8BM5cZz-PYwAtmWJ85I&s"/>
+</div>
+<script>
+
+    for(let i = 1; i*100 < window.innerWidth-20; i++){
+        let img = document.createElement('img');
+        img.src = 'https://media.danmurphys.com.au/dmo/product/107286-1.png?impolicy=PROD_MD';
+        img.id='breezer';
+        document.getElementById('image-header').appendChild(img);
+    }
+</script>
+<% include ../partials/footer %>
