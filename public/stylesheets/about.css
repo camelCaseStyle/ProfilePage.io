@@ -1,0 +1,26 @@
+.about-title h1 {
+    color: #535353; 
+    font-size:45px;
+    font-weight:600;
+    margin-top: 1em;
+}
+.about-title span {
+    color: #42ddf5;
+    font-weight:700;
+}
+.about-title h3{
+    margin-top: 2em;
+}
+
+ul{
+ list-style-type: none;   
+}
+
+.icon{
+    position: relative; 
+    top: 6px;
+}
+.line{
+    border: solid #535353; 
+    border-width: 0 1.5px 0 0;
+}
