@@ -1,0 +1,22 @@
+h1{
+    color: #42ddf5; 
+    font-size:45px;
+    font-weight:600;
+    margin-top: 1em;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    margin-top: 1em;
+}
+li{
+    list-style: none;
+    float: left;
+}
+

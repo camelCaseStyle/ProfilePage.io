@@ -38,4 +38,8 @@ router.get("/rupali", (req, res)=>{
 
 })
 
+router.get('/radio', (req, res)=>{
+    res.render('home/radio');
+})
+
 module.exports = router;
