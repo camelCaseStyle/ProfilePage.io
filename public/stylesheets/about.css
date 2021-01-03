@@ -24,3 +24,12 @@ ul{
     border: solid #535353; 
     border-width: 0 1.5px 0 0;
 }
+
+.my-photo{
+    float: left;
+    border-radius: 25px;
+}
+
+.lists{
+    text-indent: 3em;
+}
