@@ -1,0 +1,28 @@
+main{
+    margin: 10px;
+}
+#author{
+    border-radius: 50%;
+    border: none;
+    width: 250px;
+    height: 250px;
+}
+
+.fab{
+    font-size: 30px;
+    margin: 10px;
+}
+.fa-linkedin{
+    color: #0e76a8;
+
+}
+.fa-facebook-square{
+    color: #3b5998;
+}
+.fa-instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            /* Also define standard property for compatibility */
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
